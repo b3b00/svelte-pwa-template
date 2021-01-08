@@ -1,0 +1,44 @@
+{
+  "name": "svelte-pwa-template",
+  "version": "1.0.0",
+  "description": "Svelte PWA template",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "serve": "serve .",
+    "watch": "rollup -c rollup.config.js --watch",
+    "autobuild": "rollup -c rollup.config.js --watch",
+    "github": "cp -f dist/* ../test/dist/ && cp -f index.html ../test/ && cp -f index.js ../test/ && cp -f worker.js ../test/ && cp -f store.js ../test/&& cp *.png ../test/ && cp manifest.json ../test/"
+  },
+  "author": "yapi",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@material/typography": "^3.1.0",
+    "@smui/button": "^1.0.0-beta.21",
+    "@smui/card": "^1.0.0-beta.21",
+    "@smui/chips": "^1.0.0-beta.21",
+    "@smui/dialog": "^1.0.0-beta.21",
+    "@smui/drawer": "^1.0.0-beta.21",
+    "@smui/fab": "^1.0.0-beta.21",
+    "@smui/form-field": "^1.0.0-beta.21",
+    "@smui/icon-button": "^1.0.0-beta.21",
+    "@smui/list": "^1.0.0-beta.21",
+    "@smui/switch": "^1.0.0-beta.21",
+    "@smui/textfield": "^1.0.0-beta.21",
+    "@smui/top-app-bar": "^1.0.0-beta.21",
+    "date-fns": "^2.14.0",
+    "qrious": "^4.0.2",
+    "rollup": "^1.32.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.9.0",
+    "rollup-plugin-svelte": "~6.1.1",
+    "rollup-plugin-terser": "^5.3.0",
+    "serve": "^11.3.2",
+    "svelte": "^3.23.2",
+    "svelte-spa-router": "^2.2.0"
+  },
+  "dependencies": {
+    "sass": "^1.26.9"
+  }
+}
