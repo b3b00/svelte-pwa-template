@@ -2,6 +2,7 @@
   
   import Router from 'svelte-spa-router'
   import {link} from 'svelte-spa-router'
+  import Main from './Main.svelte';
   import Drawer, {AppContent, Content, Header, Title, Subtitle, Scrim} from '@smui/drawer';
   import List, {Item, Text, Separator, Subheader} from '@smui/list';
   import Button, {Label, Icon} from '@smui/button';  
@@ -25,8 +26,6 @@ let satus = true;
     import { onMount } from 'svelte';
 
     onMount(async () => {
-      window.addEventListener('online', onOnLine);
-      window.addEventListener('offline', onOffLine);
         });
 
 
@@ -59,6 +58,7 @@ let prominent = false;
 <Scrim />
 <AppContent>
 <p>here stands your PWA content</p>
+<Main></Main>
   <!-- <Router {routes}/> -->
 </AppContent>
 

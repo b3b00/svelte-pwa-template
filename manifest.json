@@ -1,7 +1,7 @@
 {
-    "name": "Recetteo",
-    "short_name": "Recetteo",
-    "short-name": "Recetteo",
+    "name": "Svelte PWA template",
+    "short_name": "Svelte PWA template",
+    "short-name": "Svelte PWA template",
     "start_url": "./",
     "start-url": "./",
     "Scope": "./",

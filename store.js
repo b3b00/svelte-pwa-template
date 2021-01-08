@@ -22,7 +22,7 @@ const createWritableLocalStorageStore = (key, startValue) => {
     };
   }
   
-  export const recipes = createWritableLocalStorageStore('data',JSON.parse('[]'));
+  export const data = createWritableLocalStorageStore('data',{counter:0,info:"Brest"});
 
-  export const count = writable(586);
+  
   
